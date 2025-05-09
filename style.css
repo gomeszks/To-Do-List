@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f9eace;
+    animation: fadeInBody 0.6s ease-in;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    text-align: center;
+    color: #575757;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 280px;
+    border-radius: 20px;
+    border: 1px solid #ff893a;
+    transition: box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff9d00;
+}
+
+button {
+    padding: 8px 12px;
+    margin-left: 8px;
+    background-color: #ff893a;
+    color: white;
+    border: none;
+    border-radius: 15px 1px 15px 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #565656;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgb(255, 255, 255);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.task-text {
+    font-size: 16px;
+}
+
+.done .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.actions button {
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.actions button:hover {
+    transform: scale(1.1);
+}
+
+.done-btn {
+    background-color: #02a360;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
