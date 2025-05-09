@@ -6,7 +6,7 @@ self.addEventListener('install', function (e) {
         'style.css',
         'script.js',
         'manifest.json',
-        'nuvem.png',
+        'icon1.png',
         'icon1.png'
         ]);
     })
